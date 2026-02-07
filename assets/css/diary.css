@@ -1,0 +1,159 @@
+body {
+    margin: 0 auto;
+    font-family: ms pgothic;
+    text-shadow: 0 0 0px, 0 0 3px grey;
+    font-size: 15px;
+    line-height: 17px;
+
+    background-image: url(https://strovi.neocities.org/flair/collage4.png);
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-position:center;
+}
+
+body a {
+    text-decoration: underline;
+    color: black;
+
+}
+
+body a:hover {
+    text-decoration: underline;
+    color: black;
+
+}
+
+.subject {
+
+    padding: 60px;
+    border: 1px;
+    margin: auto 0;
+    width: 560px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    
+}
+
+.area {
+
+   
+      margin-left:150px;
+    width:700px;
+ border-left:1px dotted
+    black;
+     border-right:1px dotted black;
+    background-color: white;
+}
+
+.side {
+    padding: 10px;
+    position: fixed;
+
+
+}
+
+.table {
+    width: 100px;
+    background-color: white;
+    padding: 10px;
+    border: 1px dotted black;
+    float: right;
+    line-height: 25px;
+
+}
+
+.fun {
+    margin: 0 auto;
+    padding: 40px;
+    border: 1px;
+    line-height: 20px;
+    width: 650px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    opacity: 80%;
+}
+
+.box {
+    width:800px;
+    height:400px;
+    margin:0 auto;
+    padding:20px;
+}
+
+
+
+.me {
+    background-color:white;
+    padding:30px;
+    width: 300px;
+  
+
+    font-family: georgia;
+    font-size: 15px;
+    line-height: 28.3px;
+    opacity: 80%;
+
+    float:left;
+    text-shadow: 0 0 0px, 0 0 4px dimgray;
+
+}
+
+.right {
+    
+    float:right;
+
+
+
+    
+}
+
+.sidepic {
+    background-color:white;
+    padding:32px;
+
+
+
+    
+    
+    
+}
+
+
+
+.updatebox {
+    width:600px;
+    text-align:center;
+    margin: 0 auto;
+    height:15px;
+    font-family:ms pgothic;
+    letter-spacing:1px;
+    font-weight:bold;
+    background-color:white;
+    border:1px solid black;
+    color:gray;
+    padding:5px;
+    text-shadow: 0 0 0px, 0 0 0px white;
+    
+
+}
+
+.updates {
+    margin:0 auto;
+
+   border:1px solid black;
+padding:5px;
+    background-color:white;
+   width:600px;
+    height:130px;
+  
+}
+
+.text {
+    padding:5px;
+   overflow: auto;
+
+    font-size:13px;
+    line-height:20px;
+    letter-spacing:1px;
+    background-color:#F1F1F1;
+}
