@@ -53,12 +53,12 @@
           <br><br>
           <mark style="color: black; background-color:white;">
             <small>
-              <b>Mood: </b> idk man im tired <br>
+              <b>Mood: </b> <span id="mood"> ... </span> <br>
               <b>Listening to: </b> <span id="song">...</span> <br>
-              <b>Reading: </b> Berserk and Blame! <br>
-              <b>Watching: </b> CMS movie <br>
-              <b>Eating: </b> Chicken <br>
-              <b>Drinking: </b> monster <br>
+              <b>Reading: </b> <span id="reading">...</span> <br>
+              <b>Watching: </b> <span id="watching">...</span> <br>
+              <b>Eating: </b> <span id="eating">...</span> <br>
+              <b>Drinking: </b> <span id="drinking">...</span> <br>
             </small>
           </mark>
           <script>
@@ -68,6 +68,18 @@
                 document.getElementById('song').textContent = data.song;
               })
               .catch(error => console.error('Error:', error));
+
+            fetch('../assets/data/vibe.json')
+              .then(response => response.json())
+              .then(data => {
+                document.getElementById('mood').textContent = data.mood;
+                document.getElementById('reading').textContent = data.reading;
+                document.getElementById('watching').textContent = data.watching;
+                document.getElementById('eating').textContent = data.eating;
+                document.getElementById('drinking').textContent = data.drinking;
+              })
+              .catch(error => console.error('Error:', error));
+
           </script>
           _____________________________________________ <br><br>
           Hello. I'm rd. This is a place for me to be totally unapologetic
@@ -78,7 +90,7 @@
 
           <b>other places:</b> <br><br>
           <a href="https://x.com/rd_626/" target="_blank">twitter</a> <br>
-          <a href="https://www.tumblr.com/rd626" target="_blank">tumblr</a> <br>
+          <a href="https://www.tumblr.com/rd626" target="_blank">tumblr</a> <br><br>
           <!-- <a href="" target="_blank">soundcloud</a> <br> -->
           <!-- <a href="" target="_blank">youtube</a> <br> -->
           <!-- <a href="" target="_blank">kofi</a> <br><br> -->
