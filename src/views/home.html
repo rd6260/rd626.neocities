@@ -5,7 +5,7 @@
   <meta http-equiv="content-type" content="text/html; charset=UTF-8">
   <meta http-equiv="Pragma" content="no-cache">
   <link href="../assets/css/home.css" rel="stylesheet" type="text/css" media="all">
-
+  <!-- <script src="../assets/js/home.js"></script> -->
 
 </head>
 
@@ -54,13 +54,21 @@
           <mark style="color: black; background-color:white;">
             <small>
               <b>Mood: </b> idk man im tired <br>
-              <b>Listening to: </b> Dutch Melrose - FORGET YOU <br>
+              <b>Listening to: </b> <span id="song">...</span> <br>
               <b>Reading: </b> Berserk and Blame! <br>
               <b>Watching: </b> CMS movie <br>
               <b>Eating: </b> Chicken <br>
               <b>Drinking: </b> monster <br>
             </small>
           </mark>
+          <script>
+            fetch('../assets/data/now_playing.json')
+              .then(response => response.json())
+              .then(data => {
+                document.getElementById('song').textContent = data.song;
+              })
+              .catch(error => console.error('Error:', error));
+          </script>
           _____________________________________________ <br><br>
           Hello. I'm rd. This is a place for me to be totally unapologetic
           about me, my interests and tastes. I like to code
@@ -79,7 +87,7 @@
           <br><br>
 
 
-            telegram: <a href="https://t.me/senku_uuu" target="_blank"> senku_uuu</a>
+          telegram: <a href="https://t.me/senku_uuu" target="_blank"> senku_uuu</a>
 
         </div>
       </div>
@@ -108,7 +116,8 @@
     <div class="text">
       <div class="scroll2">
         <mark style="background-color:white;">
-          <b> 07/02/2026: </b> - its 07:42 in the morning, i haven't slept the whole night. but finally its released! <br>
+          <b> 07/02/2026: </b> - its 07:42 in the morning, i haven't slept the whole night. but finally its released!
+          <br>
           <b> 07/02/2026: </b> - its 06:33 in the morning, i haven't slept a bit working on shit site. man i'm having
           fun <br>
         </mark>
