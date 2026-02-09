@@ -1,0 +1,52 @@
+body {
+  margin: 0 auto;
+  font-family: ms pgothic;
+  text-shadow: 0 0 0px, 0 0 3px grey;
+  font-size: 13px;
+  line-height: 17px;
+  letter-spacing: 0.7px;
+  background-image: url(https://strovi.neocities.org/flair/bg.png);
+  background-repeat: repeat;
+  background-attachment: fixed;
+}
+
+body a {
+  text-decoration: underline;
+  color: black;
+}
+
+body a:hover {
+  text-decoration: underline;
+  color: grey;
+
+}
+
+.box {
+  width: 860px;
+  padding: 20px;
+}
+
+.right {
+  margin: 0 auto;
+  float: right;
+  overflow-y: scroll;
+  line-height: 20px;
+  width: 450px;
+  height: 600px;
+  border: black double 4px;
+  padding: 20px;
+  background: white;
+}
+
+.left {
+  margin: 0 auto;
+  width: 300px;
+  overflow-y: scroll;
+  float: left;
+  line-height: 20px;
+  height: 600px;
+  border: black double 4px;
+  padding: 20px;
+  background-image: url();
+  background-color: white;
+}
